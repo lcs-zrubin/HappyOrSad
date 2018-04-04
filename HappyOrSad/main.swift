@@ -8,5 +8,13 @@
 
 import Foundation
 
-print("Hello, World!")
+// Show the prompt
+print("How are you 😃 doing ☹️ today 😊?")
+
+// Get the user input
+var rawInput = readLine()
+
+// Print out the input provided
+print("You said:")
+print(rawInput)
 
