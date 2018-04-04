@@ -8,9 +8,6 @@
 
 import Foundation
 
-// Show the prompt
-print("How are you 😃 doing ☹️ today 😊?")
-
 // Get the user input
 var rawInput = readLine()
 
