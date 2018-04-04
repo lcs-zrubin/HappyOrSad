@@ -10,8 +10,56 @@ import Foundation
 
 // Get the user input
 var rawInput = readLine()
+var hapiFes = 0
+var sadFes = 0
+
+//Make sure the input was given (create a String from the String?)
+guard let input = rawInput else {
+    //ERROR
+    exit(9)
+}
+//Stop the program if there was invalid input
+if input.characters.count < 1 || input.characters.count > 255 {
+    exit(9)
+}
 
 // Print out the input provided
 print("You said:")
-print(rawInput)
+print(rawInput) //optinal String
+print(input) //non optional String
+
+//Process - inspect each character
+for individualCharacter in input {
+    
+    //aDebug
+    print(individualCharacter)
+    
+    // Categorize the character
+    if individualCharacter == "😃" || individualCharacter == "😊" || individualCharacter == "😀" || individualCharacter == "😄" || individualCharacter == "🙂"  {
+        //Add a happy
+        hapiFes += 1
+    } else if individualCharacter == "☹️" || individualCharacter == "😔" || individualCharacter == "😟" || individualCharacter == "🙁" || individualCharacter == "☹️" || individualCharacter == "😢" {
+        //Add a sadboye
+        sadFes += 1
+    }
+}
+
+//Output
+//If no emoji, print no
+if hapiFes == 0 && sadFes == 0 {
+    print("none")
+//If same number of happy as sad emojis, print unsure
+} else if hapiFes == sadFes {
+    print("unsure")
+//If more happy than sad, print happy
+} else if hapiFes > sadFes {
+    print("Happy")
+//else, there will be more sad, so print sad
+} else {
+    print("Sad")
+}
+
+
+
+
 
