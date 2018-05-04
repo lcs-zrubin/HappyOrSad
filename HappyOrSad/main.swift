@@ -35,14 +35,18 @@ for individualCharacter in input {
     //print(individualCharacter)
     
     // Categorize the character
-    if individualCharacter == "😃" || individualCharacter == "😊" || individualCharacter == "😀" || individualCharacter == "😄" || individualCharacter == "🙂"  {
-        //Add a happy
+    switch individualCharacter {
+    case "😃", "😊", "😀", "😄", "🙂":
         hapiFes += 1
-    } else if individualCharacter == "☹️" || individualCharacter == "😔" || individualCharacter == "😟" || individualCharacter == "🙁" || individualCharacter == "☹️" || individualCharacter == "😢" || individualCharacter == "😕" {
-        //Add a sadboye
+    case "☹️", "😔", "😟", "🙁", "☹️", "😢", "😕":
         sadFes += 1
+    default:
+        break //do nothing
     }
 }
+  
+   
+
 
 //Output
 //If no emoji, print no

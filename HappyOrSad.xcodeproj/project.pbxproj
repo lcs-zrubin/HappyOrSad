@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0E4F377620750C2400E1C552 /* HappyOrSad */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HappyOrSad; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E4F377920750C2500E1C552 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0E4F377920750C2500E1C552 /* main.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
